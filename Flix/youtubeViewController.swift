@@ -10,10 +10,27 @@ import UIKit
 
 class youtubeViewController: UIViewController {
 
+    @IBAction func backButton(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var webView: UIWebView!
+    
+    var movie: [String:Any]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        titleLabel.text = movie["title"] as! String
+        
+        
+        
+        
+        
     }
     
 
